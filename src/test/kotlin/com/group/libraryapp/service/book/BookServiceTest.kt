@@ -2,10 +2,10 @@ package com.group.libraryapp.service.book
 
 import com.group.libraryapp.domain.book.Book
 import com.group.libraryapp.domain.book.BookRepository
+import com.group.libraryapp.domain.loanhistory.UserLoanHistory
 import com.group.libraryapp.domain.user.User
 import com.group.libraryapp.domain.user.UserRepository
-import com.group.libraryapp.domain.user.loanhistory.UserLoanHistory
-import com.group.libraryapp.domain.user.loanhistory.UserLoanHistoryRepository
+import com.group.libraryapp.domain.loanhistory.UserLoanHistoryRepository
 import com.group.libraryapp.dto.book.request.BookLoanRequest
 import com.group.libraryapp.dto.book.request.BookRequest
 import com.group.libraryapp.dto.book.request.BookReturnRequest
@@ -71,7 +71,13 @@ class BookServiceTest @Autowired constructor(
         // given
         bookRepository.save(Book("책 제목"))
         val savedUser = userRepository.save(User("사용자", null))
-        userLoanHistoryRepository.save(UserLoanHistory(savedUser, "책 제목", false))
+        userLoanHistoryRepository.save(
+            UserLoanHistory(
+                savedUser,
+                "책 제목",
+                false
+            )
+        )
         val request = BookLoanRequest("사용자", "책 제목")
 
         // when & then
@@ -87,7 +93,13 @@ class BookServiceTest @Autowired constructor(
         // given
         bookRepository.save(Book("책 제목"))
         val savedUser = userRepository.save(User("사용자", null))
-        userLoanHistoryRepository.save(UserLoanHistory(savedUser, "책 제목", false))
+        userLoanHistoryRepository.save(
+            UserLoanHistory(
+                savedUser,
+                "책 제목",
+                false
+            )
+        )
         val request = BookReturnRequest(savedUser.name, "책 제목")
 
         // when
