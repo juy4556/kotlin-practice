@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.group.libraryapp.calculator.CalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-20T16:26:54" hostname="MacBook-Air-2.local" time="0.048">
+<testsuite name="com.group.libraryapp.calculator.CalculatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-24T08:23:06" hostname="MacBook-Air-2.local" time="0.042">
   <properties/>
-  <testcase name="divideTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.038"/>
+  <testcase name="divideTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.036"/>
   <testcase name="addTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.0"/>
-  <testcase name="multipleTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.001"/>
-  <testcase name="divideExceptionTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.007"/>
+  <testcase name="multipleTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.0"/>
+  <testcase name="divideExceptionTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.004"/>
   <testcase name="minusTest()" classname="com.group.libraryapp.calculator.CalculatorTest" time="0.001"/>
   <system-out><![CDATA[모든 테스트 시작 전
 각 테스트 시작 전
