@@ -1,4 +1,4 @@
-package com.group.libraryapp.domain.user.loanhistory;
+package com.group.libraryapp.domain.loanhistory;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -16,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QUserLoanHistory extends EntityPathBase<UserLoanHistory> {
 
-    private static final long serialVersionUID = -827780662L;
+    private static final long serialVersionUID = 893301873L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 
@@ -26,7 +26,7 @@ public class QUserLoanHistory extends EntityPathBase<UserLoanHistory> {
 
     public final NumberPath<Long> id = createNumber("id", Long.class);
 
-    public final EnumPath<com.group.libraryapp.domain.user.UserLoanStatus> status = createEnum("status", com.group.libraryapp.domain.user.UserLoanStatus.class);
+    public final EnumPath<UserLoanStatus> status = createEnum("status", UserLoanStatus.class);
 
     public final com.group.libraryapp.domain.user.QUser user;
 

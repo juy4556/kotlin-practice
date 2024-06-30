@@ -1,8 +1,8 @@
 package com.group.libraryapp.dto.book.response
 
-data class BookStatResponse(
-    val type: String,
-    val count: Int
-) {
+import com.group.libraryapp.domain.book.BookType
 
-}
+data class BookStatResponse(
+    val type: BookType,
+    val count: Long,
+)
